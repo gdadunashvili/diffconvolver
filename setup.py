@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-   name='difdfconvolver',
+   name='diffconvolver',
    version='0.1',
    description='Solve pde systems using FDM',
    author='George Dadunashvili',
