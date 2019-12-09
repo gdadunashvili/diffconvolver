@@ -169,9 +169,9 @@ def bulk_update_flat(u: np.ndarray, psi: np.ndarray,
     else:
         psi4 = 0
 
-    u[grid.bulk] -= dt*(u4 - (par.sigma_eff + 0.5)*u2 + psi2)
+    u[grid.bulk] -= dt*(u4 - 0.5*u2 + psi2)
 
-    psi[grid.bulk] += par.tr*dt*(-u4 + par.ap1*psi2 - par.gamma*psi4)
+    psi[grid.bulk] += par.tr*dt*(-u4 + par.two_sigma_plus_1*psi2 - par.gamma_eff*psi4)
 
 
 def bulk_update_tube(u: np.ndarray, psi: np.ndarray,
@@ -182,8 +182,12 @@ def bulk_update_tube(u: np.ndarray, psi: np.ndarray,
     # u6 = sg.fftconvolve(u, d6, mode='valid')
 
     psi2 = sg.fftconvolve(psi, d2, mode='valid')
-    psi4 = sg.fftconvolve(psi, d4, mode='valid')
-    # psi6 = sg.fftconvolve(psi, d6, mode='valid')
+    # psi4 = sg.fftconvolve(psi, d4, mode='valid')
+
+    if par.gamma != 0:
+        psi4 = sg.fftconvolve(psi, d4, mode='valid')
+    else:
+        psi4 = 0
 
     # u[grid.bulk] -= dt*(u4 + (2-par.sigma_eff)*u2 + (1-par.sigma_eff)*u[grid.bulk] + psi2 + psi[grid.bulk])
     u[grid.bulk] -= dt*(u4 + 2*u2 + u[grid.bulk] + psi2 + psi[grid.bulk])
