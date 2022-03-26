@@ -1,7 +1,11 @@
+from importlib_metadata import version
 from setuptools import setup
-
+import json
+name ='diffconvolver'
+with open("VERSION.json", 'r') as v:
+   version=json.loads(v.read())["VERSION"]
 setup(
-   name='diffconvolver',
+   name=name,
    version='0.1',
    description='Solve pde systems using FDM',
    author='George Dadunashvili',

@@ -1,5 +1,5 @@
-[![release version](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/flippy-software-package/flippy/master/VERSION.json&query=$.*&color=blue&label=version))]()
-[![licence](https://img.shields.io/badge/licence-MIT-green)](https://gitlab.tudelft.nl/idema-group/flippy/-/blob/master/LICENSE)
+[![release version](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/gdadunashvili/diffconvolver/main/VERSION.json&query=$.*&color=blue&label=version))](https://github.com/gdadunashvili/diffconvolver/releases)
+[![licence](https://img.shields.io/badge/licence-MIT-green)](https://github.com/gdadunashvili/diffconvolver/blob/main/LICENSE)
 
 # difconvolver
 
