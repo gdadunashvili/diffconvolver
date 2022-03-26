@@ -1,4 +1,4 @@
-[![release version](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/gdadunashvili/diffconvolver/main/VERSION.json&query=$.*&color=blue&label=version))](https://github.com/gdadunashvili/diffconvolver/releases)
+[![release version](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/gdadunashvili/diffconvolver/main/VERSION.json&query=$.*&color=blue&label=version)](https://github.com/gdadunashvili/diffconvolver/releases)
 [![licence](https://img.shields.io/badge/licence-MIT-green)](https://github.com/gdadunashvili/diffconvolver/blob/main/LICENSE)
 
 # difconvolver

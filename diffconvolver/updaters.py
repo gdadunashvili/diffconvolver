@@ -4,7 +4,6 @@ from scipy import signal as sg
 from Grid2D import Grid2D
 
 
-
 def del_maker(ng, make_6th=False):
     c1, i01 = sm.stencil_weights(1, -ng, ng)
     c2, i02 = sm.stencil_weights(2, -ng, ng)
